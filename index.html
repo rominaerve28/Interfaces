@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Mi Portafolio</title>
+    <link rel="icon" type="image/png" href="romifoto.jpeg">
+    <link href="Style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <header>
+      <img tabindex="1"class="header-img" src="romifoto.jpeg" alt="Foto de Romina"> </img>
+      <h1 tabindex="1" class="header">Romina Eras</h1>
+      <h2 tabindex="1" class="subtitle">4 Nivel<sup>to</sup> "A"</h2>
+
+        <nav>
+          <ul class="navigation">
+            <li class="nav-item"><a href="#acerca">Acerca de</a> </li>
+            <li class="nav-item"> <a href="#proyec">Mis Proyectos</a> </li>
+            <li class="nav-item"> <a href="#contad">Contacto</a> </li>
+          </ul>
+        </nav>
+    </header>
+
+  <main>
+    <section>
+      <h2 class="header" id="acerca">Acerca de</h2>
+      <p class="intro">
+      <br> Mi nombre es Romina Eras, actualmente estoy cursando el cuarto semestre de la carrera Tecnologías de la información, correspondiente a la facultad de ciencias informáticas.</br> 
+      <br> Me gusta tomar fotos a paisajes, y personas, es uno de mis hobbies.</br>
+      <br> El sitio web tratará sobre fotos que son de mi autoría, y así mismo de tips, para tomar buenas fotos, con pocos o bastantes recursos.</br>
+      <br> De la misma manera configuraciones de la cámara y del escenario en cuestión, y por último la edición de fotos.</br>
+      
+
+      <ul class="social-media">
+        <li>
+          <a href="https://twitter.com/romaerve" target="_blank">
+            <img src="twitter.png" alt="Twitter de Romina"/>
+            <p class="social-link-text">Twitter</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/rominaerve28" target="_blank">
+            <img src="github-logo.png" alt="Github de Romina"/>
+            <p class="social-link-text">Github</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="linkedin.png" alt="Linkedin Romina "/>
+            <p class="social-link-text">Linkedin</p>
+          </a>
+        </li>
+      </ul>
+    </p>
+  </section>
+
+    <section>
+      <h2 class="header" id="proyec">Mis Proyectos</h2>
+      <div class="carousel">
+        <button class="arrow arrow-left" aria-label="Retroceder"></button>
+        <div class="window">
+          <ul class="project-container">
+
+            <li class="project1-container"><button class="project1 project">
+              <img src="girasol.jpg" class="project-img" alt="Girasol"></button>
+            </li>
+
+            
+            <li class="project3-container"><button class="project3 project">
+              <img src="sombra.jfif" class="project-img" alt="Persona en contraluz"></button>
+            </li>
+
+            <li class="project4-container" aria-hidden="true"><button class="project4 project"
+              tabindex="-1"><img src="arbol.jfif" class="project-img" alt="Arbol en contraluz"></button>
+            </li>
+
+            <li class="project5-container" aria-hidden="true"><button class="project5 project"
+              tabindex="-1"><img src="pino.jfif" class="project-img" alt="Pino"></button>
+            </li>
+            <li class="project5-container" aria-hidden="true"><button class="project5 project"
+              tabindex="-1"><img src="perro.jfif" class="project-img" alt="Perro"></button>
+            </li>
+
+          </ul>
+        </div>
+        <button class="arrow arrow-right" aria-label="Siguiente"></button>
+      </div>
+    </section>
+  </main>
+
+
+    <footer class="contact-section">
+      <h2 class="header" id="contad">Contacto</h2>
+      <p class="intro">Para contactarme llenar el formulario</p>
+      <form class="form-container">
+        <label class="form-label">Nombre</label>
+          <input type="text" aria-label="nombre" id="name"/>
+        <span id="name-error" aria-live="assertive"></span> <br/>
+        <label class="form-label">Correo</label>
+          <input type="text" aria-label="correo"/> <br />
+        <label class="message-input">Mensaje <input type="text" /> <br/>  </label>
+      <button class="send-button">Enviar</button>
+      </form>
+    </footer>
+
+    <div class="notification" aria-live="assertive"></div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="header" id="modal-header" tabindex="0">Proyecto </h2>
+          <img src="images/project2.png" class="modal-project-image" alt="Vista previa de proyecto"/>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
